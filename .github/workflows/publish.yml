@@ -1,0 +1,31 @@
+name: Publish to ClawHub
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install clawhub CLI
+        run: npm install -g clawhub
+
+      - name: Authenticate
+        run: clawhub auth login --token "${{ secrets.CLAWHUB_TOKEN }}" --no-browser
+
+      - name: Publish
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          clawhub publish . \
+            --slug telegram-auto-topic \
+            --name "Telegram Auto-Topic" \
+            --version "$VERSION" \
+            --changelog "${{ github.event.release.body }}" \
+            --tags latest
