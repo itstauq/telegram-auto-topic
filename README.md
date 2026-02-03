@@ -9,6 +9,10 @@ If you find this useful, [star the repo](https://github.com/itstauq/telegram-aut
 
 Add `/topic` to the start of any message in a Telegram forum group → a new topic is created from it. The title is figured out from your message automatically — no need to think of one yourself.
 
+## Demo
+
+https://github.com/itstauq/telegram-auto-topic/raw/main/demo.mov
+
 ## Example
 
 **1.** You send a message starting with `/topic`:
