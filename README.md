@@ -2,6 +2,11 @@
 
 An [OpenClaw](https://openclaw.ai) skill that turns Telegram messages into forum topics instantly.
 
+[![GitHub](https://img.shields.io/github/stars/itstauq/telegram-auto-topic?style=social)](https://github.com/itstauq/telegram-auto-topic)
+[![Twitter Follow](https://img.shields.io/twitter/follow/itstauq?style=social)](https://x.com/itstauq)
+
+If you find this useful, [star the repo](https://github.com/itstauq/telegram-auto-topic) and [follow me on X](https://x.com/itstauq) for more!
+
 Add `/topic` to the start of any message in a Telegram forum group → a new topic is created from it. The title is figured out from your message automatically — no need to think of one yourself.
 
 ## Example
