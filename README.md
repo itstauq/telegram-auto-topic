@@ -11,7 +11,7 @@ Add `/topic` to the start of any message in a Telegram forum group → a new top
 
 ## Demo
 
-https://github.com/itstauq/telegram-auto-topic/raw/main/demo.mov
+https://github.com/user-attachments/assets/e59fb6e7-8060-441a-8d17-282693f200f3
 
 ## Example
 
