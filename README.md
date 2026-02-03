@@ -12,7 +12,7 @@ Add `/topic` to the start of any message in a Telegram forum group → a new top
 ## Example
 
 **1.** You send a message starting with `/topic`:
-> /topic I need to look into renewing my passport before March
+> /topic @your_bot I need to look into renewing my passport before March
 
 **2.** A new forum topic **"Passport Renewal Before March"** is created with your message quoted inside it. You get a reply linking directly to the new topic.
 
@@ -40,9 +40,11 @@ Or manually — clone this repo into your OpenClaw skills directory.
 
 Works with media too — photos, videos, or documents with `/topic` in the caption get forwarded into the new topic.
 
-## Optional: Telegram autocomplete
+## Optional configuration
 
-To get `/topic` in Telegram's autocomplete menu, add this to your OpenClaw config under `channels.telegram`:
+**Skip the @bot mention** — by default, the bot only responds when mentioned. To use `/topic` without mentioning the bot, set `requireMention: false` for the group in your OpenClaw config.
+
+**Telegram autocomplete** — to get `/topic` in Telegram's command menu, add under `channels.telegram`:
 
 ```json
 {
